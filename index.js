@@ -11,22 +11,6 @@ const promptUser = () => {
         message: 'What is your job title?',
         choices: ['Manager','Engineer','Intern']
       },
-      {
-        type: 'list',
-        name: 'license',
-        message: 'Which license would you like to use?',
-        choices: ["MIT", "BSD3"]
-      },
-      {
-        type: 'input',
-        name: 'description',
-        message: 'Please describe your application using two to three sentences.',
-      },
-      {
-        type: 'input',
-        name: 'usage',
-        message: 'Who can use this application and how?'
-      },
     ]);
   };
   
