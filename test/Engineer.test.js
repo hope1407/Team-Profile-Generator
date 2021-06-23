@@ -1,56 +1,51 @@
 const Engineer = require('../lib/engineerClass');
 
-describe('getOfficeNumber', () => {
-    it('It should return the manager answers', () => {
+describe('getGithub', () => {
+    it('It should return the engineer github url', () => {
       // Arrange
-      const oInput = 25;
-      const nameInput = "Johnny"
-      const emailInput = "a@a.com"
-      const testManager = new Manager(nameInput, 1, emailInput, oInput);
+      const gitHub = "hope1407";
+      const testEngineer = new Engineer("nameInput", 1, "emailInput", gitHub);
       
       // Act
-      const testMe = testManager.getOfficeNumber();
-      const secondTest = testManager.name
-      
+      const testMe = testEngineer.github;
       // Assert
-      expect(testMe).toBe(oInput);
-      expect(secondTest).toBe(nameInput)
+      expect(testMe).toBe(gitHub);
     });
   });
-  describe('getManagerName', () => {
-    it('It should get the Manager name', () => {
+  describe('getEngineerName', () => {
+    it('It should get the Engineer name', () => {
       // Arrange
       const nameInput = "Johnny"
-      const testManager = new Manager(nameInput, 1, "emailInput", "oInput");
+      const testEngineer = new Engineer(nameInput, 1, "emailInput", "gitHub");
       
       // Act
-      const secondTest = testManager.name
+      const secondTest = testEngineer.name
       
       // Assert
       expect(secondTest).toBe(nameInput)
     });
   });
-  describe('getManagerEmail', () => {
-    it('It should get the Manager email', () => {
+  describe('getEngineerEmail', () => {
+    it('It should get the Engineer email', () => {
       // Arrange
       const emailInput = "Johnny"
-      const testManager = new Manager("nameInput", 1, emailInput, "oInput");
+      const testEngineer = new Engineer("nameInput", 1, emailInput, "gitHub");
       
       // Act
-      const thirdTest = testManager.email
+      const thirdTest = testEngineer.email
       
       // Assert
       expect(thirdTest).toBe(emailInput)
     });
   });
-  describe('getManagerId', () => {
-    it('It should get the Manager ID', () => {
+  describe('getEngineerId', () => {
+    it('It should get the Engineer ID', () => {
       // Arrange
       const idInput = 2
-      const testManager = new Manager("nameInput", idInput, "emailInput", "oInput");
+      const testEngineer = new Engineer("nameInput", idInput, "emailInput", "gitHub");
       
       // Act
-      const fourthTest = testManager.id
+      const fourthTest = testEngineer.id
       
       // Assert
       expect(fourthTest).toBe(idInput)

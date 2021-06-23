@@ -1,58 +1,41 @@
-const Manager = require('../lib/managerClass');
+const Employee = require('../lib/EmployeeClass');
 
-describe('getOfficeNumber', () => {
-  it('It should return the manager answers', () => {
-    // Arrange
-    const oInput = 25;
-    const nameInput = "Johnny"
-    const emailInput = "a@a.com"
-    const testManager = new Manager(nameInput, 1, emailInput, oInput);
-    
-    // Act
-    const testMe = testManager.getOfficeNumber();
-    const secondTest = testManager.name
-    
-    // Assert
-    expect(testMe).toBe(oInput);
-    expect(secondTest).toBe(nameInput)
-  });
-});
-describe('getManagerName', () => {
-  it('It should get the Manager name', () => {
+describe('getEmployeeName', () => {
+  it('It should get the Employee name', () => {
     // Arrange
     const nameInput = "Johnny"
-    const testManager = new Manager(nameInput, 1, "emailInput", "oInput");
-    
+    const testEmployee = new Employee(nameInput, 1, "emailInput", "gitHub");
+
     // Act
-    const secondTest = testManager.name
-    
+    const secondTest = testEmployee.name
+
     // Assert
     expect(secondTest).toBe(nameInput)
   });
 });
-describe('getManagerEmail', () => {
-  it('It should get the Manager email', () => {
+describe('getEmployeeEmail', () => {
+  it('It should get the Employee email', () => {
     // Arrange
     const emailInput = "Johnny"
-    const testManager = new Manager("nameInput", 1, emailInput, "oInput");
-    
+    const testEmployee = new Employee("nameInput", 1, emailInput, "gitHub");
+
     // Act
-    const thirdTest = testManager.email
-    
+    const thirdTest = testEmployee.email
+
     // Assert
     expect(thirdTest).toBe(emailInput)
   });
 });
-describe('getManagerId', () => {
-  it('It should get the Manager ID', () => {
+describe('getEmployeeId', () => {
+  it('It should get the Employee ID', () => {
     // Arrange
     const idInput = 2
-    const testManager = new Manager("nameInput", idInput, "emailInput", "oInput");
-    
+    const testEmployee = new Employee("nameInput", idInput, "emailInput", "gitHub");
+
     // Act
-    const fourthTest = testManager.id
-    
+    const fourthTest = testEmployee.id
+
     // Assert
     expect(fourthTest).toBe(idInput)
   });
-});
+  });
