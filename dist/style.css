@@ -1,0 +1,44 @@
+body {
+    font-family: 'Inconsolata', monospace;
+}
+.title {
+    display: flex;
+    justify-content: center;
+    background-color: #B2B8A3;
+    color: #FFF5EB;
+    padding: 25px;
+}
+
+.name {
+    background-color: #B2B8A3;
+    color: #FFF5EB;
+    padding: 2px;
+    border-radius: 5px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+#cardPlacement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.employeeTitle {
+    display: flex;
+    justify-content: center;
+}
+
+#gitHubLink {
+    margin-bottom: 5px;
+}
+
+.emailBtn {
+    background-color: #FFF5EB;
+    border-color: #FFF5EB;
+    color: #B2B8A3;
+    font-weight: 700;
+}
+.custom-card {
+    margin: 10px;
+}
